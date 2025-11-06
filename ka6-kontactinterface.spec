@@ -1,19 +1,19 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	25.08.2
+%define		kdeappsver	25.08.3
 %define		kframever	5.94.0
 %define		kfver		5.53.0
 %define		qtver		5.15.2
 %define		kaname		kontactinterface
 Summary:	Kontact interface
 Name:		ka6-%{kaname}
-Version:	25.08.2
-Release:	2
+Version:	25.08.3
+Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	7d7424f5caf8b7aa3cc944fa0174fdcb
+# Source0-md5:	c988bc26704f7b6d439c63a3c972ed5e
 URL:		http://www.kde.org/
 BuildRequires:	gettext-devel
 BuildRequires:	kf6-extra-cmake-modules >= %{kframever}
@@ -83,7 +83,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{kaname}.lang
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/libKPim6KontactInterface.so.*.*
+%{_libdir}/libKPim6KontactInterface.so.*.*
 %ghost %{_libdir}/libKPim6KontactInterface.so.6
 %{_datadir}/qlogging-categories6/kontactinterface.categories
 %{_datadir}/qlogging-categories6/kontactinterface.renamecategories
