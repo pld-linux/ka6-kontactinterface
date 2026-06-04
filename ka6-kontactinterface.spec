@@ -1,19 +1,19 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	26.04.1
+%define		kdeappsver	26.04.2
 %define		kframever	5.94.0
 %define		kfver		5.53.0
 %define		qtver		5.15.2
 %define		kaname		kontactinterface
 Summary:	Kontact interface
 Name:		ka6-%{kaname}
-Version:	26.04.1
+Version:	26.04.2
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	879719b00d2ef3842fdd802521f72abb
+# Source0-md5:	74415f0b8f6f5d8d24e7732b57b6518c
 URL:		http://www.kde.org/
 BuildRequires:	gettext-devel
 BuildRequires:	kf6-extra-cmake-modules >= %{kframever}
